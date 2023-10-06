@@ -1,14 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// import Home from "./components/Home";
-// import About from "./components/About";
+import Home from "./views/Home";
+import History from './views/History';
+import Characters from './views/Characters';
+import GameMechanics from './views/GameMechanics';
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={"<Home />"} />
-        <Route path="/about" element={"<About />"} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/history" element={<History/>} />
+        <Route path="/characters" element={<Characters/>} />
+        <Route path="/mechanics" element={<GameMechanics/>} />
       </Routes>
     </BrowserRouter>
   );
