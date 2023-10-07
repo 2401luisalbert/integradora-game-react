@@ -4,6 +4,7 @@ import History from "./views/History";
 import Characters from "./views/Characters";
 import GameMechanics from "./views/GameMechanics";
 import NavbarComponent from "./components/global/NavbarComponent";
+import FooterComponent from "./components/global/FooterComponent";
 
 const AppRouter = () => {
   return (
@@ -16,6 +17,7 @@ const AppRouter = () => {
           <Route path="/characters" element={<Characters />} />
           <Route path="/mechanics" element={<GameMechanics />} />
         </Routes>
+        <FooterComponent/>
       </>
     </BrowserRouter>
   );
