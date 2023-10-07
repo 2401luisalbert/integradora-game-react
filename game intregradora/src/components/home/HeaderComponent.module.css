@@ -1,6 +1,5 @@
-/* Estilos generales del encabezado */
 .hero {
-  background-image: url("../../assets/images/header-home.jpg"); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta real de tu imagen de fondo */
+  background-image: url("../../assets/images/header-home.jpg");
   background-size: cover;
   height: 50vh;
   background-position: center;
@@ -16,13 +15,13 @@
 .hero_content {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
- display: flex;
- align-items: center;
- justify-content: center;
- padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 
   @media (min-width: 768px) {
-    grid-template-columns: 2fr 1fr; /* Dos columnas en pantallas más grandes */
+    grid-template-columns: 2fr 1fr;
     align-items: center;
   }
 }
@@ -34,8 +33,12 @@
   flex-direction: column;
 }
 
-h1{
-  font-size: 1.8rem;
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .btn_container {
@@ -50,11 +53,21 @@ h1{
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 20px;
-  transition: background-color 0.3s, transform 0.3s; /* Agregado: transición para el efecto de agua */
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn:hover {
   background-color: #0056b3;
-  transform: scale(1.05); /* Agregado: escala ligeramente el botón al hacer hover */
+  transform: scale(1.05);
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+  }
 }

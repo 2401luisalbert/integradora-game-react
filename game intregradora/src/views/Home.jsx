@@ -1,11 +1,39 @@
-import HeaderComponent from './../components/home/HeaderComponent';
+import CardComponent from "../components/global/CardComponent";
+import HeaderComponent from "./../components/home/HeaderComponent";
+import { dataHomeWorlds } from "../data/data";
+import styles from "./Home.module.css";
 
 const Home = () => {
   return (
     <div>
-      <HeaderComponent/>
+      <HeaderComponent />
+      <div className="container mt-5 align-items-center d-flex flex-column">
+        <p className={styles.text_world} >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+          deleniti suscipit quod eum aliquid excepturi, iste rerum aspernatur
+          mollitia! Error placeat deleniti debitis impedit illo cupiditate
+          voluptatibus recusandae labore nostrum?
+        </p>
+        <div className={styles.grid_container}>
+        {dataHomeWorlds.map((world) => (
+            <CardComponent
+              img={world.img}
+              title={world.title}
+              description={world.description}
+              id={world.id}
+              key={world.id}
+            />
+          ))}
+        </div>
+        <p className={styles.text_world} >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+          deleniti suscipit quod eum aliquid excepturi, iste rerum aspernatur
+          mollitia! Error placeat deleniti debitis impedit illo cupiditate
+          voluptatibus recusandae labore nostrum?
+        </p>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

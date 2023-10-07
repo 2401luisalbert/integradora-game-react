@@ -1,0 +1,48 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+    background-color: transparent;
+    margin: 1rem;
+  }
+
+  .card:hover{
+    transform: translateY(-2rem);
+    transition: transform 0.5s ease;
+  }
+  
+  .imgContainer {
+    flex: 1; 
+    max-height: 200px; 
+    overflow: hidden;
+  }
+  
+  .cardImg {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+
+  .cardImg:hover{
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+  }
+  
+  .cardText {
+    flex: 1; 
+    padding: 18px;
+    text-align: left;
+  }
+  
+  .cardTitle {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .cardDescription {
+    font-size: 16px;
+    color: #333;
+  }
+  
