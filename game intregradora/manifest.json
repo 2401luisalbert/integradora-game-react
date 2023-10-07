@@ -5,6 +5,7 @@
     "orientation": "portrait",
     "scope": "/",
     "start_url": "/",
+    "id": "/",
     "name": "Integradora",
     "short_name": "Integradora",
     "description": "Este es un sitio web creado para la promoción de nuestro juego creado en Unity para la materia de integradora la UTM",
