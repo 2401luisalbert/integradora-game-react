@@ -1,4 +1,22 @@
-:root {
-  background-color: aliceblue;
+/* Importa las fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixel+Operator&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Aplica las fuentes a los elementos correspondientes */
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 5rem;
 }
 
+/* Subtítulos */
+h2, h3 {
+  font-family: 'Pixel Operator', monospace;
+}
+
+/* Párrafos */
+p {
+  font-family: 'VT323', monospace;
+  font-size: 1.5rem;
+}
