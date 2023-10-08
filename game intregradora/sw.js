@@ -1,4 +1,5 @@
 const staticCacheName = 'V1-Cache'
+const dynamicCache = "site-dynamic-v1"
 const cacheFiles = [
     '/', // Raíz de la aplicación
     '/index.html',
@@ -55,10 +56,14 @@ self.addEventListener('activate', (evt) => {
 
 //Fetch service worker
 self.addEventListener('fetch', (evt) => {
-
     evt.respondWith(
         caches.match(evt.request).then(cacheRes => {
-            return cacheRes || fetch(evt.request)
+            return cacheRes || fetch(evt.request).then(fetchRes => {
+                return caches.open(dynamicCache).then(cache => {
+                    cache.put(evt.request.url, fetchRes.clone())
+                    return fetchRes
+                })
+            })
         })
     );
 });
