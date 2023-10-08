@@ -7,19 +7,8 @@ const cacheFiles = [
     '/index.css',
     '/main.jsx',
     '/package.json',
-    // Recursos CSS
-    '/src/components/global/CardComponent.module.css',
-    '/src/components/global/FooterComponent.module.css',
-    '/src/components/global/NavbarComponent.module.css',
-    '/src/components/Home/HeaderComponent.module.css',
-    '/src/views/Home.module.css',
     // Imágenes
     '/src/assets/images/header-home.jpg',
-    // Archivos de componentes
-    '/src/components/global/CardComponent.jsx',
-    '/src/components/global/FooterComponent.jsx',
-    '/src/components/global/NavbarComponent.jsx',
-    '/src/components/Home/HeaderComponent.jsx',
     // Datos
     '/src/data/data.js',
     // Vistas
@@ -28,7 +17,8 @@ const cacheFiles = [
     '/src/views/History.jsx',
     '/src/views/Home.jsx',
     //rutas
-    'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap'
+    'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap',
+    'https://www.youtube.com/embed/nWMKBdf-CGo?si=q_aTYGBHH7rxCWjP',
 ];
 
 

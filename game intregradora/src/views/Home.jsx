@@ -31,13 +31,13 @@ const Home = () => {
           mollitia! Error placeat deleniti debitis impedit illo cupiditate
           voluptatibus recusandae labore nostrum?
         </p>
-        {/* <div className={styles.iframe_container}>
+        <div className={styles.iframe_container}>
           <iframe
             src="https://www.youtube.com/embed/nWMKBdf-CGo?si=q_aTYGBHH7rxCWjP"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
-        </div> */}
+        </div>
       </div>
     </div>
   );
