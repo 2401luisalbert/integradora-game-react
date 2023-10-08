@@ -1,7 +1,22 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import { fileURLToPath } from 'url'; // Importa la función fileURLToPath para trabajar con import.meta.url
+import path from 'path'; // Importa el módulo 'path'
 
-// https://vitejs.dev/config/
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 export default defineConfig({
   plugins: [react()],
-})
+  // base: "/integradora-game-react/",
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'), // Utiliza path.resolve para construir rutas absolutas
+        sw: path.resolve(__dirname, 'sw.js'),
+        manifest: path.resolve(__dirname, 'manifest.json'),
+        index: path.resolve(__dirname, 'index.js')
+      }
+    }
+  }
+});
