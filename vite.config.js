@@ -12,7 +12,6 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, 'index.html'), // Utiliza path.resolve para construir rutas absolutas
         sw: path.resolve(__dirname, 'sw.js'),
         manifest: path.resolve(__dirname, 'manifest.json'),
         index: path.resolve(__dirname, 'index.js')
