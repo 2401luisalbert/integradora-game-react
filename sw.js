@@ -2,7 +2,7 @@
 const staticCacheName = 'V1-Cache'; // Nombre de la caché estática
 const dynamicCache = "site-dynamic-v1"; // Nombre de la caché dinámica
 
-// Lista de recursos para cachear en la caché estática
+// Lista de recursos para cachear en la caché estática //
 const cacheFiles = [
     '/', // Raíz de la aplicación
     '/index.html', // Página principal
