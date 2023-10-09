@@ -12,9 +12,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        sw: path.resolve(__dirname, '/public/sw.js'),
-        manifest: path.resolve(__dirname, '/public/manifest.json'),
-        index: path.resolve(__dirname, '/public/index.js')
+        index: path.resolve(__dirname, '/index.js'),
+        sw: path.resolve(__dirname, '/sw.js'),
+        manifest: path.resolve(__dirname, '/manifest.json'),
       }
     }
   }
