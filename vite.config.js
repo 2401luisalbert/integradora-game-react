@@ -12,6 +12,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
+        html: path.resolve(__dirname, 'index.html'),
         sw: path.resolve(__dirname, 'sw.js'),
         manifest: path.resolve(__dirname, 'manifest.json'),
         index: path.resolve(__dirname, 'index.js')

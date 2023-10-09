@@ -1,59 +1,70 @@
-const staticCacheName = 'V1-Cache'
-const dynamicCache = "site-dynamic-v1"
+// Definir nombres de cachés estáticas y dinámicas
+const staticCacheName = 'V1-Cache'; // Nombre de la caché estática
+const dynamicCache = "site-dynamic-v1"; // Nombre de la caché dinámica
+
+// Lista de recursos para cachear en la caché estática
 const cacheFiles = [
     '/', // Raíz de la aplicación
-    '/index.html',
-    '/manifest.json',
-    '/index.css',
-    '/main.jsx',
-    '/package.json',
+    '/index.html', // Página principal
+    '/manifest.json', // Archivo de manifiesto para aplicaciones web progresivas
+    '/index.css', // Hoja de estilos principal
+    '/main.jsx', // Archivo JavaScript principal
+    '/package.json', // Archivo de configuración de paquete (para Node.js)
+    
     // Imágenes
-    '/src/assets/images/header-home.jpg',
+    '/src/assets/images/header-home.jpg', // Imagen de encabezado
+
     // Datos
-    '/src/data/data.js',
+    '/src/data/data.js', // Datos de la aplicación
+
     // Vistas
-    '/src/views/Characters.jsx',
-    '/src/views/GameMechanics.jsx',
-    '/src/views/History.jsx',
-    '/src/views/Home.jsx',
-    //rutas
-    'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap',
-    'https://www.youtube.com/embed/nWMKBdf-CGo?si=q_aTYGBHH7rxCWjP',
+    '/src/views/Characters.jsx', // Vista de personajes
+    '/src/views/GameMechanics.jsx', // Vista de mecánicas de juego
+    '/src/views/History.jsx', // Vista de historia
+    '/src/views/Home.jsx', // Página de inicio
+
+    // Rutas externas (fuentes y videos)
+    'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap', // Fuente externa
+    'https://www.youtube.com/embed/nWMKBdf-CGo?si=q_aTYGBHH7rxCWjP', // Video de YouTube
 ];
 
-
-// Install service worker
+// Instalar el service worker
 self.addEventListener('install', (evt) => {
     evt.waitUntil(
         caches.open(staticCacheName).then(cache => {
-            console.log('Archivos cacheados');
-            return cache.addAll(cacheFiles)
+            console.log('Archivos cacheados'); // Registro: archivos cacheados
+            return cache.addAll(cacheFiles); // Agregar recursos a la caché estática
         }).catch(error => {
-            console.error('Error en la instalación del Service Worker:', error);
+            console.error('Error en la instalación del Service Worker:', error); // Registro de error en caso de fallo en la instalación
         })
     );
 });
 
-
-//Activate service worker
+// Activar el service worker
 self.addEventListener('activate', (evt) => {
     evt.waitUntil(
         caches.keys().then(keys => {
-            return Promise.all(keys.filter(key => key !== staticCacheName).map(key => caches.delete(key)))
+            return Promise.all(keys.filter(key => key !== staticCacheName).map(key => caches.delete(key)));
         })
-    )
+    );
 });
 
-//Fetch service worker
+// Manejar las solicitudes de recursos
 self.addEventListener('fetch', (evt) => {
     evt.respondWith(
         caches.match(evt.request).then(cacheRes => {
-            return cacheRes || fetch(evt.request).then(fetchRes => {
-                return caches.open(dynamicCache).then(cache => {
-                    cache.put(evt.request.url, fetchRes.clone())
-                    return fetchRes
-                })
-            })
+            // Verificar si la solicitud tiene un esquema válido antes de intentar cachearla
+            if (evt.request.url.startsWith('http') || evt.request.url.startsWith('https')) {
+                return cacheRes || fetch(evt.request).then(async fetchRes => {
+                    return caches.open(dynamicCache).then(cache => {
+                        cache.put(evt.request.url, fetchRes.clone()); // Almacena la respuesta en la caché dinámica
+                        return fetchRes;
+                    });
+                });
+            } else {
+                // Si la solicitud tiene un esquema no válido, simplemente devuélvela sin cachear
+                return fetch(evt.request);
+            }
         })
     );
 });
