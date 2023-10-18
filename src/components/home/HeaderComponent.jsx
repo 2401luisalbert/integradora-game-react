@@ -8,12 +8,10 @@ const HeaderComponent = () => {
       <header className={styles.hero}>
         <div className={styles.hero_content}>
           <div className={styles.left_content}>
-            <span className="header_title">Título Principal</span>
+            <span className="header_title">Space Defender</span>
             <p className="header_text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur doloribus, voluptatem harum doloremque vel et aperiam
-              perferendis, voluptates optio tempore sit molestias adipisci
-              eligendi neque architecto quasi quo nihil repudiandae.
+            <b>Space Defender</b> te sumerge en un futuro lejano, donde la humanidad ha expandido su presencia por todo el sistema solar, colonizando la Luna, Marte y estaciones espaciales distantes. A medida que las colonias humanas prosperan, surgen informes inquietantes de avistamientos de fenómenos inexplicables y actividades sospechosas.
+
             </p>
             <Link to="/history">
               <ButtonComponent title="Ver más"/>

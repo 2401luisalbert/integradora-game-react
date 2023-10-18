@@ -19,13 +19,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif; /* Títulos */
 }
 
-h2, h3 {
-  font-family: 'Playfair Display', serif; /* Subtítulos */
-}
-
-p {
+p{
   color: #FFF;
-  font-family: 'Lato', sans-serif; /* Párrafos */
+  text-align: justify;
 }
 
 #stars {

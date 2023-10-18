@@ -1,7 +1,6 @@
 .text_world {
   width: 80%;
-  font-size: 1rem;
-  padding: 1rem;
+  margin-bottom: 3rem;
 }
 
 .grid_container {
@@ -10,6 +9,7 @@
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
   grid-gap: 1rem;
   margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .iframe_container {

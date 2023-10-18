@@ -9,15 +9,16 @@ const Home = () => {
       <HeaderComponent />
       <div className="container mt-5 align-items-center d-flex flex-column">
         <p className={styles.text_world}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-          deleniti suscipit quod eum aliquid excepturi, iste rerum aspernatur
-          mollitia! Error placeat deleniti debitis impedit illo cupiditate
-          voluptatibus recusandae labore nostrum?
+          Explora la Luna, Marte y una estación espacial abandonada mientras
+          recopilas pistas y muestras de vida alienígena. Encuentra esferas
+          bioluminiscentes que brillan en la oscuridad, huevos alienígenas que
+          revelan sus estrategias de reproducción y disquetes con datos críticos
+          sobre la comunicación de los extraterrestres.
         </p>
         <div className={styles.grid_container}>
           {dataHomeWorlds.map((world) => (
             <CardComponent
-              img={world.img}
+              imageURL={world.imageURL}
               title={world.title}
               description={world.description}
               id={world.id}
