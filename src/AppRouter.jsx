@@ -9,16 +9,14 @@ import FooterComponent from "./components/global/FooterComponent";
 const AppRouter = () => {
   return (
     <BrowserRouter>
-      <>
-        <NavbarComponent />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/history" element={<History />} />
-          <Route path="/characters" element={<Characters />} />
-          <Route path="/mechanics" element={<GameMechanics />} />
-        </Routes>
-        <FooterComponent/>
-      </>
+      <NavbarComponent />
+      <Routes>
+        <Route path="/" exact="true" element={<Home />} />
+        <Route path="/history" exact="true" element={<History />} />
+        <Route path="/characters" exact="true" element={<Characters />} />
+        <Route path="/mechanics" exact="true" element={<GameMechanics />} />
+      </Routes>
+      <FooterComponent />
     </BrowserRouter>
   );
 };

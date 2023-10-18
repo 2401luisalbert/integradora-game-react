@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./HeaderComponent.module.css"; // Importa los estilos
+import ButtonComponent from "../global/ButtonComponent";
 
 const HeaderComponent = () => {
   return (
@@ -14,8 +15,8 @@ const HeaderComponent = () => {
               perferendis, voluptates optio tempore sit molestias adipisci
               eligendi neque architecto quasi quo nihil repudiandae.
             </p>
-            <Link to="/history" className={styles.btn}>
-              Ver más
+            <Link to="/history">
+              <ButtonComponent title="Ver más"/>
             </Link>
           </div>
         </div>

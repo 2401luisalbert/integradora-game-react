@@ -8,7 +8,7 @@ const NavbarComponent = () => {
           Space Defender
         </Link>
         <button
-          className="navbar-toggler btn btn-light"
+          className="navbar-toggler bg-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -21,39 +21,22 @@ const NavbarComponent = () => {
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav w-100 mb-2 mb-lg-0 d-flex justify-content-end align-items-center">
             <li className="nav-item">
-              <NavLink
-                exact
-                to="/"
-                className="nav-link text-light"
-                activeClassName="active"
-              >
+              <NavLink to="/" className="nav-link text-light">
                 Inicio
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/history"
-                className="nav-link text-light"
-                activeClassName="active"
-              >
+              <NavLink to="/history" className="nav-link text-light">
                 Historia
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/characters"
-                className="nav-link text-light"
-                activeClassName="active"
-              >
+              <NavLink to="/characters" className="nav-link text-light">
                 Personajes
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/mechanics"
-                className="nav-link text-light"
-                activeClassName="active"
-              >
+              <NavLink to="/mechanics" className="nav-link text-light">
                 Controles
               </NavLink>
             </li>

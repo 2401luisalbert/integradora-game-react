@@ -1,8 +1,7 @@
-
-import PropTypes from 'prop-types'; // Importa PropTypes si aún no lo has hecho
 import styles from './CardComponent.module.css';
 
 const CardComponent = (props) => {
+  // eslint-disable-next-line react/prop-types
   const { img, title, description} = props;
 
   return (
@@ -18,12 +17,6 @@ const CardComponent = (props) => {
   );
 };
 
-// Agrega la validación de PropTypes si es necesario
-CardComponent.propTypes = {
-  img: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-};
+
 
 export default CardComponent;
