@@ -1,7 +1,7 @@
+/* Estilo para el contenedor principal .hero */
 .hero {
-  background-image: url("../../assets/images/header-home.jpg");
   background-size: cover;
-  height: 50vh;
+  height: 40vh;
   background-position: center;
   color: #fff;
   text-align: center;
@@ -9,47 +9,54 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  margin: 4rem 0;
 }
 
+/* Estilo para el contenido dentro del .hero */
 .hero_content {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-
-  @media (min-width: 768px) {
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-  }
+  justify-content: space-around;
+  height: 100%;
 }
 
+/* Estilo para el contenido de la izquierda dentro de .hero_content */
 .left_content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
 }
 
-h1 {
-  font-size: 2.5rem;
+/* Estilo para el título en el encabezado */
+.header_title {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: 1px; /* Cambié el valor de 10px a 1px para hacerlo más legible */
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-p {
+/* Estilo para el texto en el encabezado */
+.header_text {
   font-size: 1.2rem;
+  width: 70%;
 }
 
+/* Estilo para el contenedor de los botones */
 .btn_container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
+/* Estilo para los botones */
 .btn {
   padding: 10px 20px;
-  background-color: #007bff;
+  border: 1px solid #fff;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -57,17 +64,20 @@ p {
   transition: background-color 0.3s, transform 0.3s;
 }
 
+/* Estilo para los botones en estado hover */
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #fff;
+  color: black;
   transform: scale(1.05);
 }
 
+/* Estilos para pantallas pequeñas (menos de 720px de ancho) */
 @media (max-width: 720px) {
-  h1 {
-    font-size: 1.5rem;
+  .header_title {
+    font-size: 2.5rem;
   }
   
-  p {
+  .header_text {
     font-size: 0.8rem;
   }
 }

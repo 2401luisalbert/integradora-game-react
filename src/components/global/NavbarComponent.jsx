@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavbarComponent = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
+        <Link to="/" className="navbar-brand text-light">
+          Space Defender
+        </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler btn btn-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -16,29 +16,46 @@ const NavbarComponent = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon "></span>
         </button>
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav w-100 mb-2 mb-lg-0 d-flex justify-content-end align-items-center">
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/">
+              <NavLink
+                exact
+                to="/"
+                className="nav-link text-light"
+                activeClassName="active"
+              >
                 Inicio
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="history">
+              <NavLink
+                to="/history"
+                className="nav-link text-light"
+                activeClassName="active"
+              >
                 Historia
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="characters">
+              <NavLink
+                to="/characters"
+                className="nav-link text-light"
+                activeClassName="active"
+              >
                 Personajes
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="mechanics">
+              <NavLink
+                to="/mechanics"
+                className="nav-link text-light"
+                activeClassName="active"
+              >
                 Controles
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
