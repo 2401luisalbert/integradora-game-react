@@ -1,5 +1,6 @@
 /* Estilo para el contenedor principal .hero */
 .hero {
+  background-image: url(/src/assets/images/header.jpg);
   background-size: cover;
   height: 40vh;
   background-position: center;
@@ -9,7 +10,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 4rem 0;
 }
 
 /* Estilo para el contenido dentro del .hero */
@@ -43,7 +43,6 @@
 /* Estilo para el texto en el encabezado */
 .header_text {
   text-align: justify;
-  font-size: 1rem;
   width: 70%;
 }
 
@@ -74,13 +73,15 @@
 
 /* Estilos para pantallas pequeñas (menos de 720px de ancho) */
 @media (max-width: 720px) {
+  .hero {
+    height: 60vh;
+  }
+
   .header_title {
-   
     font-size: 2.5rem;
   }
-  
+
   .header_text {
     width: 90%;
-    font-size: 0.8rem;
   }
 }

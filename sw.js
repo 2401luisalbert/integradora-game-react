@@ -12,7 +12,10 @@ const cacheFiles = [
     '/package.json', // Archivo de configuración de paquete (para Node.js)
     
     // Imágenes
-    '/src/assets/images/header-home.jpg', // Imagen de encabezado
+    '/src/assets/images/Estacion.jpg', 
+    '/src/assets/images/header.jpg',
+    '/src/assets/images/Luna.jpg',
+    '/src/assets/images/Marte.jpg',
 
     // Datos
     '/src/data/data.js', // Datos de la aplicación
@@ -25,7 +28,7 @@ const cacheFiles = [
 
     // Rutas externas (fuentes y videos)
     'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap', // Fuente externa
-    // 'https://www.youtube.com/embed/nWMKBdf-CGo?si=q_aTYGBHH7rxCWjP', // Video de YouTube
+    // 'https://www.youtube.com/embed/kfYEiTdsyas?si=vbFcZcWEkzL_r8vk', // Video de YouTube
 ];
 
 // Instalar el service worker
