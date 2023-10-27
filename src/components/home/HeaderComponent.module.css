@@ -1,6 +1,6 @@
 /* Estilo para el contenedor principal .hero */
 .hero {
-  background-image: url(/src/assets/images/header.jpg);
+  background-image: url(/src/assets/images/header.webp);
   background-size: cover;
   height: 40vh;
   background-position: center;

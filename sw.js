@@ -1,6 +1,6 @@
 // Definir nombres de cachés estáticas y dinámicas
 const staticCacheName = 'V1-Cache'; // Nombre de la caché estática
-// const dynamicCache = "site-dynamic-v1"; // Nombre de la caché dinámica
+const dynamicCache = "site-dynamic-v1"; // Nombre de la caché dinámica
 
 // Lista de recursos para cachear en la caché estática //
 const cacheFiles = [
@@ -59,7 +59,7 @@ self.addEventListener('fetch', (evt) => {
             // Verificar si la solicitud tiene un esquema válido antes de intentar cachearla
             if (evt.request.url.startsWith('http') || evt.request.url.startsWith('https')) {
                 return cacheRes || fetch(evt.request).then(async fetchRes => {
-                    return caches.open("").then(cache => {
+                    return caches.open(dynamicCache).then(cache => {
                         cache.put(evt.request.url, fetchRes.clone()); // Almacena la respuesta en la caché dinámica
                         return fetchRes;
                     });
