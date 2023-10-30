@@ -52,11 +52,11 @@
 @media (max-width: 768px) {
   .card {
     width: 100%; /* Hacer que la tarjeta ocupe todo el ancho de la pantalla */
-    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    height: 230px; /* Permitir que la altura se ajuste automáticamente */
   }
   
   .cardImage img {
-    max-height: 150px; /* Limitar la altura máxima de la imagen */
+    max-height: 230px; /* Limitar la altura máxima de la imagen */
   }
   
   .cardDescription {
