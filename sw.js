@@ -12,10 +12,15 @@ const cacheFiles = [
     '/package.json', // Archivo de configuración de paquete (para Node.js)
     
     // Imágenes
-    '/src/assets/images/Estacion.jpg', 
-    '/src/assets/images/header.jpg',
-    '/src/assets/images/Luna.jpg',
-    '/src/assets/images/Marte.jpg',
+    '/src/assets/images/Estacion.webp', 
+    '/src/assets/images/header.webp',
+    '/src/assets/images/Luna.webp',
+    '/src/assets/images/Marte.webp',
+    '/src/assets/images/Gorvix.webp',
+    '/src/assets/images/Nick-Parker.webp',
+    '/src/assets/images/SpaceDefender.webp',
+    '/src/assets/images/X1-SC4R.webp',
+    '/src/assets/images/Zyglar.webp',
 
     // Datos
     '/src/data/data.js', // Datos de la aplicación

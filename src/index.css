@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 @import url('/src/views/Home.module.css');
-@import url('/src/components/global/CardComponent.module.css');
+@import url('/src/components/home/CardComponent.module.css');
 @import url('/src/components/home/HeaderComponent.module.css');
 @import url('/src/components/global/ButtonComponent.module.css');
+@import url('/src/views/History.module.css');
 
 :root {
   height: 100vh;

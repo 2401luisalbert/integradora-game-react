@@ -1,4 +1,4 @@
-import CardComponent from "../components/global/CardComponent";
+import CardComponent from "../components/home/CardComponent";
 import HeaderComponent from "./../components/home/HeaderComponent";
 import { dataHomeWorlds } from "../data/data";
 import styles from "./Home.module.css";
@@ -31,7 +31,6 @@ const Home = () => {
             ))}
           </div>
         </div>
-
 
         <h2 className="title my-5 py-2">GamePlay</h2>
         <div className={styles.iframe_container}>

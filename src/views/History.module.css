@@ -1,0 +1,38 @@
+/* Estilos para pantallas grandes (escritorio) */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 5rem;
+  top: 26rem;
+  width: 45%;
+}
+
+/* Estilos para pantallas pequeñas (móviles y tablets) */
+@media screen and (max-width: 768px) {
+  .gridContainer {
+    display: flex; /* Cambia a un contenedor de tipo flexbox en pantallas pequeñas */
+    flex-direction: column-reverse;
+  }
+
+  .infoContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .imageContainer {
+    position: static;
+    width: 100%;
+    right: 0;
+    top: 0;
+    margin-bottom: 1rem;
+  }
+}
