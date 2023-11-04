@@ -1,4 +1,9 @@
 /* Estilos para pantallas grandes (escritorio) */
+
+.historyContainer{
+ overflow-x: hidden;
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -33,6 +38,6 @@
     width: 100%;
     right: 0;
     top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: rem;
   }
 }

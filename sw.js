@@ -21,9 +21,13 @@ const cacheFiles = [
     '/src/assets/images/SpaceDefender.webp',
     '/src/assets/images/X1-SC4R.webp',
     '/src/assets/images/Zyglar.webp',
-
+    '/src/assets/images/Notify.png',
+    
     // Datos
     '/src/data/data.js', // Datos de la aplicación
+
+    //Hooks
+    './src/hook/useAOS.js',
 
     // Vistas
     '/src/views/Characters.jsx', // Vista de personajes

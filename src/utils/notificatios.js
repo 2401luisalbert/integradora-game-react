@@ -13,8 +13,8 @@ export const requestNotificationPermission = async () => {
   
   export const showPushNotification = (title, options) => {
     // Agrega las propiedades personalizadas al objeto options
-    options.icon = "/src/assets/manifest/icon-512x512.png"; // URL de la imagen del icono
-    options.image = "/src/assets/images/header.webp"; // URL de una imagen grande
+    options.icon = "/src/assets/images/Nick-Parker.webp"; // URL de la imagen del icono
+    options.image = "/src/assets/images/Notify.webp"; // URL de una imagen grande
     options.vibrate = [200, 100, 200]; // Patrón de vibración (si el dispositivo lo admite)
 
     if (Notification.permission === "granted") {

@@ -5,7 +5,7 @@ import { dataHistory } from "../data/data";
 
 const History = () => {
   return (
-    <div className={`container ${styles.historyContainer}`}>
+    <div className={`container ${styles.historyContainer} `}>
           <h1 className={`text-center text-light mt-5 ${styles.title}`}>Historia</h1>
       <div className={`${styles.gridContainer}`}>
         <div className={styles.infoContainer}>

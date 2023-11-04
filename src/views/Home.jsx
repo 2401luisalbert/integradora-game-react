@@ -2,17 +2,22 @@ import CardComponent from "../components/home/CardComponent";
 import HeaderComponent from "./../components/home/HeaderComponent";
 import { dataHomeWorlds } from "../data/data";
 import styles from "./Home.module.css";
+import useAOS from './../hook/useAOS';
 
 const Home = () => {
+
+  // eslint-disable-next-line no-unused-vars
+  const AOS = useAOS();
+
   return (
     <div>
       <HeaderComponent />
       <div className="container mt-5">
 
-        <h2 className="title my-5 py-2">Mundos</h2>
+        <h2 className="title my-5 py-2" data-aos="fade-right" >Mundos</h2>
         <div className=" align-items-center d-flex flex-column">
 
-          <p className={styles.text_world}>
+          <p className={styles.text_world} data-aos="fade-right">
             Explora la Luna, Marte y una estación espacial abandonada mientras
             recopilas pistas y muestras de vida alienígena. Encuentra esferas
             bioluminiscentes que brillan en la oscuridad, huevos alienígenas que
@@ -27,13 +32,14 @@ const Home = () => {
                 description={world.description}
                 id={world.id}
                 key={world.id}
+                data-aos="slide-up" 
               />
             ))}
           </div>
         </div>
 
-        <h2 className="title my-5 py-2">GamePlay</h2>
-        <div className={styles.iframe_container}>
+        <h2 className="title my-5 py-2" data-aos="fade-right">GamePlay</h2>
+        <div className={styles.iframe_container} data-aos="fade-right">
           <iframe
             src="https://www.youtube.com/embed/kfYEiTdsyas?si=vbFcZcWEkzL_r8vk"
             title="YouTube video player"

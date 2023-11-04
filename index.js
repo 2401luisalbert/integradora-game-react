@@ -10,8 +10,8 @@ Notification.requestPermission().then(result => {
 
         const options = {
             body: "¡Hola! Bienvenido a tu mejor aventura espacial.",
-            icon: "/src/assets/manifest/icon-512x512.png", // URL de la imagen del icono
-            image: "/src/assets/images/header.webp", // URL de una imagen grande
+            icon: "/src/assets/images/Nick-Parker.webp", // URL de la imagen del icono
+            image: "/src/assets/images/Notify.webp", // URL de una imagen grande
             vibrate: [200, 100, 200], // Patrón de vibración (si el dispositivo lo admite)
             // requireInteraction: true, // Hace que la notificación sea persistente
         };
