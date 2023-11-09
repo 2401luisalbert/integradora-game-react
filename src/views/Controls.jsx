@@ -9,7 +9,7 @@ const Controls = () => {
         <div>
           <KeyBoardControlsComponent />
         </div>
-        <div className={styles.content}>
+        <div data-aos="fade-right" className={styles.content}>
           <p>
             Teclas <b className="text-primary"> W, A, S y D</b> Utiliza estas teclas para mover a Nick
             Parker por los escenarios de la Luna, Marte y la estación espacial.

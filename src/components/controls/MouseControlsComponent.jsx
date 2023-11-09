@@ -3,7 +3,7 @@ import styles from './MouseControlsComponent.module.css'
 const MouseControlsComponent = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.grid}>
+      <div data-aos="fade-up" className={styles.grid}>
         <figure className={styles.figure}>
           <img src="/src/assets/images/clic-mouse.webp" alt="mouse" className={styles.img1} />
         </figure>
@@ -12,7 +12,7 @@ const MouseControlsComponent = () => {
 </p>
         </div>
       </div>
-      <div className={styles.grid}>
+      <div data-aos="fade-up" className={styles.grid}>
         <figure className={styles.figure}>
           <img src='/src/assets/images/mouse-move.webp' alt="mouse" className={styles.img2} />
         </figure>

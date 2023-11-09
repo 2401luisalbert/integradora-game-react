@@ -16,9 +16,9 @@ const Characters = () => {
 
       <CardCharacterComponent />
 
-      <h2  data-aos="fade-right"className="text-white my-5">Items </h2>
+      <h2  data-aos="fade-right" className="text-white my-5">Items </h2>
       
-      <div className="d-flex flex-wrap justify-content-center">
+      <div  data-aos="fade-up" className="d-flex flex-wrap justify-content-center">
         {Items.map((item) => (
           <CardItemsComponent key={item.id} item={item} />
         ))}

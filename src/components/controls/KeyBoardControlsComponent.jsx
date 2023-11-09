@@ -3,8 +3,8 @@ import styles from "./KeyBoardControlsComponent.module.css";
 
 const KeyBoardControlsComponent = () => {
   return (
-    <div className={styles.grid}>
-      <h1 className={styles.title}>Controles de teclado</h1>
+    <div data-aos="fade-right" className={styles.grid}>
+      <h1  className={styles.title}>Controles de teclado</h1>
       <div className={styles.keyboard}>
         <ul className={styles.row}>
           <li></li>
