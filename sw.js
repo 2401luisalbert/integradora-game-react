@@ -10,19 +10,24 @@ const cacheFiles = [
     '/index.css', // Hoja de estilos principal
     '/main.jsx', // Archivo JavaScript principal
     '/package.json', // Archivo de configuración de paquete (para Node.js)
-    
+
     // Imágenes
-    '/src/assets/images/Estacion.webp', 
+    '/src/assets/images/clic-mouse.webp',
+    '/src/assets/images/discket.webp',
+    '/src/assets/images/Esfera.webp',
+    '/src/assets/images/Estacion.webp',
+    '/src/assets/images/Gorvix.webp',
     '/src/assets/images/header.webp',
+    '/src/assets/images/Huevo.webp',
     '/src/assets/images/Luna.webp',
     '/src/assets/images/Marte.webp',
-    '/src/assets/images/Gorvix.webp',
+    '/src/assets/images/mouse-move.webp',
     '/src/assets/images/Nick-Parker.webp',
+    '/src/assets/images/Notify.webp',
     '/src/assets/images/SpaceDefender.webp',
     '/src/assets/images/X1-SC4R.webp',
     '/src/assets/images/Zyglar.webp',
-    '/src/assets/images/Notify.png',
-    
+
     // Datos
     '/src/data/data.js', // Datos de la aplicación
 
