@@ -1,7 +1,6 @@
 import CardCharacterComponent from "../components/character/CardCharacterComponent";
 import CardItemsComponent from "../components/character/CardItemsComponent";
 import { Items } from "./../data/data";
-console.log("Items", Items);
 
 const Characters = () => {
   return (

@@ -1,7 +1,6 @@
 import styles from './CardItemsComponent.module.css'
 
 const CardItemsComponent = (props) => {
-console.log("props", props)
 
     // eslint-disable-next-line react/prop-types
     const{title, imageURL, description} = props.item

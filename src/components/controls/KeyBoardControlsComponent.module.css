@@ -1,0 +1,172 @@
+/* Estilos para el contenedor principal */
+.grid {
+  background-color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el título "Eyes on the screen" */
+.title {
+  text-align: center;
+  color: mintcream;
+  text-transform: uppercase;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 1em;
+  letter-spacing: 0.3em;
+  padding-left: 1rem;
+}
+
+/* Estilos para el teclado */
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+}
+
+/* Estilos para las filas del teclado */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+
+/* Estilos para las teclas del teclado */
+.link {
+  height: 3em;
+  width: 3em;
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.4em;
+  line-height: 3em;
+  letter-spacing: 1px;
+  margin: 0.4em;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 1em;
+}
+
+/* Keyframes para el grupo de teclas "ring" */
+@keyframes ringAnim1 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ringAnim2 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes whiteAnim1 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes whiteAnim2 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes whiteAnim3 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Aplica keyframes a las teclas con clase "ring" */
+.ring1 {
+  /* w */
+  background-color: transparent;
+  border: 2px solid white;
+  animation: ringAnim1 6s ease-in 2s infinite normal forwards;
+}
+
+.ring2 {
+  /* s */
+  background-color: transparent;
+  border: 2px solid white;
+  animation: ringAnim2 6s ease-in 4s infinite normal forwards;
+}
+
+/* Aplica keyframes a las teclas con clase "white" */
+.white1 {
+  /* A */
+  background-color: transparent;
+  border: 2px solid white;
+  animation: whiteAnim1 6s ease-in 0s infinite normal forwards;
+}
+
+
+.white2 {
+  /* S */
+  background-color: transparent;
+  border: 2px solid white;
+  animation: whiteAnim3 6s ease-in 6s infinite normal forwards;
+}
+
+.middle {
+  /* D */
+  background-color: transparent;
+  border: 2px solid white;
+  animation: whiteAnim3 6s ease-in 8s infinite normal forwards;
+}
+
+/* Estilos para la tecla "space" */
+#b {
+  width: 18rem;
+}
+
+.space {
+  width: 18rem;
+}

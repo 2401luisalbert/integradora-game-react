@@ -26,7 +26,9 @@ p{
   text-align: justify;
 }
 
-
+ol, ul {
+  padding: 0;
+}
 
 #stars {
   z-index: -9999;
