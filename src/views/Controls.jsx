@@ -22,7 +22,7 @@ const Controls = () => {
           </p>
         </div>
       </div>
-      <h1 className={styles.title}>Controles de teclado</h1>
+      <h1 className={styles.title}>Controles de Mouse</h1>
       <MouseControlsComponent />
     </>
   );

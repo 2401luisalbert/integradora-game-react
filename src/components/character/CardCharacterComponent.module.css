@@ -12,21 +12,25 @@
 .card {
   position: relative;
   width: 150px;
-  height: 470px;
+  height: 420px;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   transition: width 0.5s ease-out, transform 0.5s, opacity 0.5s;
   display: flex;
   align-items: end;
+  
 
   &:hover {
     width: var(--width);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.1);
+    filter: drop-shadow(0px -0px 10px #2978ad);
+    transition: all ease 2s;
   }
 
   &:hover .container h2 {
     transform: rotate(0);
+    filter: drop-shadow(0px -0px 15px #FFF);
   }
 
   &:hover .container p {
@@ -46,6 +50,7 @@
     background-repeat: no-repeat;
     transform: scale(1);
     transition: transform 0.5s ease-in;
+    
   }
 
   &:nth-of-type(1):before {
@@ -66,6 +71,7 @@
   position: absolute;
   left: 50%;
   bottom: 15%;
+  top:12%;
   transform: translateX(-50%);
   text-align: center;
   font: 900 1rem helvetica, sans-serif;
@@ -102,13 +108,12 @@
     gap: 0.5rem;
   }
 
-  .container{
-    bottom: 5%;
-  }
+ 
 
   .card {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 70px;
     height: 400px ;
     

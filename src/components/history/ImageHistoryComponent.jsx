@@ -13,7 +13,8 @@ function ImageHistoryComponent() {
       <img
         src="/src/assets/images/SpaceDefender.webp"
         alt="Space Defender"
-        style={{ maxWidth: "100%", height: "auto" }}
+        style={{ maxWidth: "100%", height: "auto",  filter: "drop-shadow(0px -0px 5px #FFF)"}}
+
       />
     </div>
   );

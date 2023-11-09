@@ -1,14 +1,15 @@
 /* Estilos base de la tarjeta */
 .card {
+  border-radius: 15px;
   width: 400px;
-  height: 250px;
+  height: 290px;
   position: relative;
   overflow: hidden;
-  border: 1px solid #ddd;
 }
 
 .cardImage {
   transition: transform 0.3s;
+  height: 300px;
 }
 
 .cardImage img {
@@ -27,9 +28,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.2);
   color: #fff;
-  padding: 10px;
+  padding: 1.2rem;
   transform: translateY(100%);
   transition: transform 0.3s;
 }
@@ -39,8 +40,12 @@
   margin: 0;
 }
 
+.card:hover{
+  filter: drop-shadow(0px -0px 10px #FFF);
+}
+
 .card:hover .cardImage {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 .card:hover .cardText {
