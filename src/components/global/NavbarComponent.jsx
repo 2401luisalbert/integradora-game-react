@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const NavbarComponent = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-dark">
+    <nav className="navbar navbar-expand-lg" style={{backgroundColor:"transparent"}}>
       <div className="container">
         <NavLink to="/" className="navbar-brand text-light">
           Space Defender
