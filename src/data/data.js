@@ -36,7 +36,7 @@ export const dataHistory = [
     },
     {
         id: "4",
-        
+
         imageURL: "/src/assets/images/Gorvix.webp",
         description: "Luego, Nick se dirige a Marte, donde se encuentra con el alien rojizo que se arrastra y posee un solo ojo, Gorvix. En su búsqueda de evidencia de vida extraterrestre, Nick descubre huevos alienígenas en las cavernas marcianas. Además, entre las rocas rojas y polvorientas del planeta, halla restos de antiguas bases de expediciones abandonadas y huesos enterrados que apuntan a una historia perdida."
     },
@@ -49,4 +49,26 @@ export const dataHistory = [
         id: "6",
         description: "La misión de Nick es, en última instancia, es descubrir la verdad detrás de la invasión alienígena y recolectar pruebas concretas para comprobar su existencia"
     }
+]
+
+export const Items = [
+    {
+        id: "1",
+        title:"Esferas Bioluminiscentes",
+        imageURL: "/src/assets/images/Esfera.webp",
+        description:"Estas esferas misteriosas emiten una luz tenue y bioluminiscente que ilumina las zonas más oscuras de la Luna. Las Esferas Bioluminiscentes son cruciales para explorar con seguridad y descubrir pistas cruciales sobre la invasión alienígena en curso."
+    },
+    {
+        id: "2",
+        title:"Huevos Alienígenas",
+        imageURL: "/src/assets/images/Huevo.webp",
+        description:"Los huevos alienígenas son pruebas de la reproducción de las criaturas invasoras que se encuentran en Marte. Al recolectarlos, los jugadores pueden descifrar cómo se están propagando los alienígenas y cuál podría ser la amenaza completa que representan. Los huevos son pistas vitales para comprender la biología y la estrategia de los extraterrestres."
+    },
+    {
+        id: "3",
+        title:"Disquete Alienígena",
+        imageURL: "/src/assets/images/discket.webp",
+        description:"Este disquete contiene información vital sobre la existencia de seres extraterrestres y detalles reveladores sobre la invasión alienígena en curso. Proteger y recuperar el Disquete de Datos Alienígenas es fundamental para avanzar en la historia y cumplir con la misión de Nick Parker."
+    }
+
 ]

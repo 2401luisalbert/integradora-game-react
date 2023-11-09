@@ -1,12 +1,12 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavbarComponent = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-dark">
       <div className="container">
-        <Link to="/" className="navbar-brand text-light">
+        <NavLink to="/" className="navbar-brand text-light">
           Space Defender
-        </Link>
+        </NavLink>
         <button
           className="navbar-toggler bg-light"
           type="button"

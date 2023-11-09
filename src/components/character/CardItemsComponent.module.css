@@ -1,0 +1,64 @@
+/* CardItemsComponent.module.css */
+
+/* Estilos iniciales de la tarjeta */
+.card {
+    border: 1px solid #6d6d6d;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .card__figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    margin-top: 1rem;
+  }
+  
+  .card__img {
+    width: 30%;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg); /* Inicialmente sin rotación */
+    transform-origin: center;
+  }
+  
+  .card__container {
+    padding: 1rem;
+   
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin-top: 10px;
+    transition: color 0.3s;
+  }
+  
+  /* Estilos al pasar el cursor sobre la tarjeta */
+  .card:hover .card__img {
+    transform: scale(1.2) rotateY(180deg) ; /* Aumentamos el ángulo de rotación */
+    transition: transform 0.8s; 
+    filter: drop-shadow(0px -0px 5px #FFF);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #161616;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: none; 
+  }
