@@ -1,6 +1,7 @@
 import KeyBoardControlsComponent from "../components/controls/KeyBoardControlsComponent";
 import styles from "./Controls.module.css";
 import MouseControlsComponent from "./../components/controls/MouseControlsComponent";
+import ESRBComponent from "../components/global/ESRBComponent";
 
 const Controls = () => {
   return (
@@ -24,6 +25,7 @@ const Controls = () => {
       </div>
       <h1 className={styles.title}>Controles de Mouse</h1>
       <MouseControlsComponent />
+      <ESRBComponent/>
     </>
   );
 };
