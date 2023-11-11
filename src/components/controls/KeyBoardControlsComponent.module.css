@@ -1,6 +1,6 @@
 /* Estilos para el contenedor principal */
 .grid {
-  background-color: black;
+  background-color: transparent;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   display: flex;
@@ -37,6 +37,8 @@
   align-items: center;
   list-style: none;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* Estilos para las teclas del teclado */
